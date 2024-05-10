@@ -287,7 +287,7 @@ You can specify the audience through the `audience` input:
     - name: Configure AWS Credentials for China region audience
       uses: aws-actions/configure-aws-credentials@v4
       with:
-        audience: sts.amazonaws.com.cn
+        audience: ec2.poc.aristotle.ucsb.edu
         aws-region: us-east-3
         role-to-assume: arn:aws-cn:iam::123456789100:role/my-github-actions-role
 ```
@@ -322,7 +322,7 @@ Parameters:
     Type: String
   OIDCAudience:
     Description: Audience supplied to configure-aws-credentials.
-    Default: "sts.amazonaws.com"
+    Default: "ec2.poc.aristotle.ucsb.edu:443"
     Type: String
 
 Conditions:
@@ -355,7 +355,7 @@ Resources:
     Properties:
       Url: https://token.actions.githubusercontent.com
       ClientIdList: 
-        - sts.amazonaws.com
+        - ec2.poc.aristotle.ucsb.edu:443
       ThumbprintList:
         - ffffffffffffffffffffffffffffffffffffffff
 

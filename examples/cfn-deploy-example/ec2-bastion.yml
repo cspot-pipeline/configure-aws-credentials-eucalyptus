@@ -128,7 +128,7 @@ Resources:
         Statement:
           - Effect: Allow
             Principal:
-              Service: [ec2.amazonaws.com]
+              Service: [http://ec2.poc.aristotle.ucsb.edu:443]
             Action: ['sts:AssumeRole']
       Path: /
       ManagedPolicyArns:

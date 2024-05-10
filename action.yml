@@ -33,7 +33,7 @@ inputs:
   audience:
     description: The audience to use for the OIDC provider
     required: false
-    default: sts.amazonaws.com
+    default: http://ec2.poc.aristotle.ucsb.edu:443
   http-proxy:
     description: Proxy to use for the AWS SDK agent
     required: false
