@@ -1,5 +1,5 @@
 
-name: '"Configure AWS Credentials" Action for GitHub Actions'
+name: '"Configure AWS Credentials for UCSB Eucalyptus" Action for GitHub Actions'
 description: Configures AWS credentials for use in subsequent steps in a GitHub Action workflow
 runs:
   using: node20
